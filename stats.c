@@ -35,4 +35,9 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
         alerters[0]();
         alerters[1]();
     }
+    else
+    {
+        emailAlertCallCount = 0;
+        ledAlertCallCount = 0;
+    }
 }
